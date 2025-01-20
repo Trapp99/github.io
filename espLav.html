@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esperienze Lavorative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/espLav.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-laptop"></i> &nbsp; Andrea Trapani - Sviluppatore FrontEnd</h1>
+    </header>
+    <nav>
+        <a href="index.html"><i class="bi bi-house"></i> Home</a>
+        <a href="project.html"><i class="bi bi-folder"></i> Progetti</a>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <section class="content col-md-8">
+                <article>
+                    <h3>1C - erp s.r.l.</h3>
+                    <ul>
+                        <li><strong>Periodo: </strong>Ottobre 2023 – Ottobre 2024</li>
+                        <li><strong>Indirizzo: </strong>Novara, Via Antonio Pacinotti 1</li>
+                        <li><strong>Tipologia contratto: </strong>Stage + Apprendistato</li>
+                        <li><strong>Posizione ricoperta: </strong>Programmazione</li>
+                        <li><strong>Mansioni: </strong>Sviluppo software e assistenza ai clienti nell’utilizzo del gestionale 1C</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Cofimco s.r.l.</h3>
+                    <ul>
+                        <li><strong>Periodo: </strong>Settembre 2022 – Agosto 2023</li>
+                        <li><strong>Indirizzo: </strong>Pombia, Via Antonio Gramsci 136</li>
+                        <li><strong>Tipologia contratto: </strong>Somministrazione a tempo determinato</li>
+                        <li><strong>Posizione ricoperta: </strong>Operaio metalmeccanico</li>
+                        <li><strong>Mansioni: </strong>Montaggio di pale per ventilatori industriali in alluminio e in vetroresina</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Project IT s.r.l.</h3>
+                    <ul>
+                        <li><strong>Periodo: </strong>Settembre 2022 – Agosto 2023</li>
+                        <li><strong>Indirizzo: </strong>Cernusco sul Naviglio, via Camillo Benso di Cavour 37/41</li>
+                        <li><strong>Tipologia contratto: </strong>prestazione non continuativa a chiamata</li>
+                        <li><strong>Posizione ricoperta: </strong>Programmazione e collaboratore tecnico</li>
+                        <li><strong>Mansioni: </strong>Assistenza software: modifiche ai siti web in HTML, CSS, Javascript e SQL in base alle esigenze dei clienti</li>
+                    </ul>
+                </article>
+            </section>
+            <aside class="col-md-4 d-flex justify-content-center align-items-center w-50">
+                <img src="media/espLav.png" alt="Descrizione dell'immagine" class="img-fluid centered-image">
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; <span id="currentYear"></span> Andrea Trapani - Sviluppatore FrontEnd</p>
+    </footer>
+
+    <!-- Bottone per tornare in cima -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn btn-primary">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/espLav.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

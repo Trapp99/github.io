@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competenze</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/school.css">
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-laptop"></i> &nbsp; Andrea Trapani - Sviluppatore FrontEnd</h1>
+    </header>
+    <nav>
+        <a href="index.html"><i class="bi bi-house"></i> Home</a>
+        <a href="project.html"><i class="bi bi-folder"></i> Progetti</a>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <section class="content col-md-8">
+                <article>
+                    <h5>Competenze linguistiche</h5>
+                    <br>
+                    <p><strong>Lingua madre: </strong>italiano</p>
+                    <p><strong>Altre lingue: </strong>Inglese <i class="fa-solid fa-arrow-right"></i> Livello intermedio
+                        (B1)
+                    </p>
+                </article>
+                <article>
+                    <h5>Competenze informatiche</h5>
+                    <br>
+                    <p>
+                        <strong>Programmazione: </strong>
+                    <ul>
+                        <li>Ottima conoscenza di HTML, CSS, JS e Bootstrap</li>
+                        <li>Conoscenza base della programmazione su Arduino e Raspberry Pi</li>
+                        <li>Conoscenza base della programmazione di App Mobile</li>
+                    </ul>
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Archiviazione: </strong>
+                    <ul>
+                        <li>Buona conoscenza dei database, della loro gestione, creazione e modifica, in particolare con
+                            linguaggio SQL e con il software Microsoft Access</li>
+                    </ul>
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Internet: </strong>
+                    <ul>
+                        <li>Conoscenza base su SEO e SEM</li>
+                        <li>Ottime capacità di gestione dei Social Network</li>
+                    </ul>
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Grafica e video: </strong>
+                    <ul>
+                        <li>Buone capacità nella creazione di contenuti grafici con Canva e Photoshop e nell’editing dei
+                            video
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+                <article>
+                    <h5>Competenze sociali e organizzative</h5>
+                    <br>
+                    <ul>
+                        <li>Ottime capacità a lavorare in team e adattarsi alle situazioni lavorative</li>
+                        <li>Buon senso dell'organizzazione del lavoro e dell'ordine, sia fisico che mentale</li>
+                        <li>Ottime capacità nel problem solving</li>
+                    </ul>
+                </article>
+            </section>
+            <aside class="col-md-4 d-flex justify-content-center align-items-center w-50">
+                <img src="media/competenze.png" alt="Descrizione dell'immagine" class="img-fluid centered-image">
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; <span id="currentYear"></span> Andrea Trapani - Sviluppatore FrontEnd</p>
+    </footer>
+
+    <!-- Bottone per tornare in cima -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn btn-primary">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/school.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>

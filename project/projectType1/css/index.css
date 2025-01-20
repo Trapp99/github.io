@@ -1,0 +1,375 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-bar {
+    background-color: #007bff; /* Azzurro */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Assicurati che sia sopra altri elementi */
+}
+
+.header-bar .container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.header-bar-2 {
+    background-color: lightgray; /* Azzurro */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 40px; /* Posiziona sotto il primo header */
+    width: 100%;
+    z-index: 1020; /* Assicurati che sia sopra altri elementi ma sotto il primo header */
+}
+
+.header-bar-2 .container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.header-bar-2 .site-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.header-bar-2 .nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-bar-2 .nav-item {
+    margin-right: 20px;
+}
+
+.header-bar-2 .nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    text-decoration: overline;
+}
+
+.header-bar-2 .nav-link:hover {
+    color: darkgrey; /* Colore più chiaro al passaggio del mouse */
+}
+
+.header-bar-2 .btn {
+    font-size: 1rem;
+}
+
+.header-bar time {
+    font-size: 1rem;
+}
+
+.header-bar .social-icon {
+    color: white;
+    margin-left: 10px;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.header-bar .social-icon:hover {
+    color: #d1e7ff; /* Colore più chiaro al passaggio del mouse */
+}
+
+
+main {
+    margin-top: 120px; /* Altezza totale degli header */
+    padding: 20px;
+}
+
+main section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+main .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .section-third,
+main .section-fourth, 
+main .section-fifth, 
+main .section-sixth,
+main .section-seventh {
+    flex: 1;
+    margin-right: 20px;
+}
+
+main .section-fourth,
+main .section-seventh {
+    margin-right: 0;
+}
+
+/* Modalità scura */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .header-bar,
+body.dark-theme .header-bar-2 {
+    background-color: #333333;
+}
+
+body.dark-theme .nav-link,
+body.dark-theme .social-icon {
+    color: #ffffff;
+}
+
+body.dark-theme .nav-link:hover,
+body.dark-theme .social-icon:hover {
+    color: #bbbbbb;
+}
+
+body.dark-theme .btn-outline-primary {
+    color: #bbbbbb;
+    border-color: #bbbbbb;
+}
+
+body.dark-theme .btn-outline-primary:hover {
+    background-color: #bbbbbb;
+    color: #333333;
+}
+
+body.dark-theme .btn-outline-secondary {
+    color: #bbbbbb;
+    border-color: #bbbbbb;
+}
+
+body.dark-theme .btn-outline-secondary:hover {
+    background-color: #bbbbbb;
+    color: #333333;
+}
+
+body.dark-theme #search-button,
+body.dark-theme #theme-toggle-button {
+    color: #ffffff;
+    background-color: #333333;
+    border-color: #333333;
+}
+
+body.dark-theme #search-button:hover,
+body.dark-theme #theme-toggle-button:hover {
+    background-color: #555555;
+    border-color: #555555;
+}
+
+body.dark-theme .site-logo {
+    filter: invert(1); /* Inverte i colori del logo per renderlo visibile in modalità scura */
+}
+
+body.dark-theme main section {
+    background-color: #444444; /* Grigio più chiaro rispetto all'header */
+    border-color: #666666; /* Bordo leggermente più chiaro */
+}
+
+body.dark-theme #search-modal .modal-content {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+body.dark-theme #search-modal .modal-content input {
+    background-color: #555555;
+    color: #ffffff;
+    border: 1px solid #777777;
+}
+
+body.dark-theme #search-modal .modal-content input::placeholder {
+    color: #bbbbbb;
+}
+
+/* Stili per il modal */
+.modal {
+    display: none; /* Nascondi il modal di default */
+    position: fixed;
+    z-index: 1050; /* Assicurati che sia sopra altri elementi */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Stili per il footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.footer .col-md-4 h5 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.footer .col-md-4 p,
+.footer .col-md-4 ul {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.footer .mt-3 {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* Stili per il pulsante di ritorno all'inizio della pagina */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1040;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Stili per il contenitore dei risultati di ricerca */
+.search-results-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 1060;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+/* Media queries per dispositivi fino a 1024px */
+@media (max-width: 1024px) {
+    .header-bar .container div,
+    .header-bar-2 .container div {
+        margin: 0 20px;
+    }
+
+    .header-bar-2 .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+    }
+
+    .header-bar-2 .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin-top: 160px; /* Altezza totale degli header */
+        padding: 10px;
+    }
+
+    main .section-third,
+    main .section-fourth,
+    main .section-fifth,
+    main .section-sixth,
+    main .section-seventh {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer .container {
+        padding: 0 20px;
+    }
+
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

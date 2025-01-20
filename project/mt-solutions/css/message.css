@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Grigio molto chiaro per lo sfondo del body */
+}
+
+.navbar {
+    border-bottom: none; /* Rimuovi la linea alla fine dell'header */
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    margin-left: 15px; /* Aggiungi questo per staccare il logo dal bordo sinistro */
+}
+
+.navbar-nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #343a40;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-nav .nav-item .nav-link i {
+    margin-right: 5px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Stili per il form di invio email */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+form .form-control {
+    margin-bottom: 15px;
+}
+
+form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Stili per il footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0; /* Riduci il padding */
+    font-size: 0.875rem; /* Riduci la dimensione del testo */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer .col-md-4 {
+    margin-bottom: 10px; /* Riduci il margine inferiore */
+}
+
+footer .col-md-4 h5 {
+    margin-bottom: 10px; /* Riduci il margine inferiore */
+    font-size: 1rem; /* Riduci la dimensione del testo */
+}
+
+footer .col-md-4 p {
+    margin-bottom: 5px; /* Riduci il margine inferiore */
+    font-size: 0.875rem; /* Riduci la dimensione del testo */
+}
+
+footer .social-icons a {
+    margin: 0 5px; /* Riduci il margine tra le icone */
+    font-size: 1.25rem; /* Riduci la dimensione delle icone */
+}
+
+footer .mt-3 {
+    margin-top: 10px; /* Riduci il margine superiore */
+    font-size: 0.75rem; /* Riduci la dimensione del testo */
+}
+
+/* Media query per dispositivi con larghezza inferiore a 1024 pixel */
+@media (max-width: 1024px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 15px 0;
+        font-size: 0.75rem;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 5px;
+    }
+
+    footer .col-md-4 h5 {
+        font-size: 0.875rem;
+    }
+
+    footer .col-md-4 p {
+        font-size: 0.75rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+
+    footer .mt-3 {
+        font-size: 0.625rem;
+    }
+}

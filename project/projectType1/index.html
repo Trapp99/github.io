@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="media/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header-bar">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div>
+                    <time id="current-time"></time>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="header-bar-2 fixed-top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div>
+                    <a href="index.html">
+                        <img src="media/iconaProgrammatore.png" alt="Logo" class="site-logo">
+                    </a>
+                </div>
+                <div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Chi siamo</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <button class="btn btn-outline-primary me-2" id="search-button"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-outline-secondary" id="theme-toggle-button"><i class="fas fa-adjust"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal per la ricerca -->
+    <div id="search-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ricerca</h2>
+            <input type="text" id="search-input" placeholder="Cosa stai cercando?">
+            <button id="search-submit" class="btn btn-primary">Avvia ricerca</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Contenuto principale del sito -->
+        <section>
+            <h2>Prima Sezione</h2>
+            <p>Contenuto della prima sezione.</p>
+        </section>
+        <section>
+            <h2>Seconda Sezione</h2>
+            <p>Contenuto della seconda sezione.</p>
+        </section>
+        <div class="row">
+            <section class="section-third">
+                <h2>Terza Sezione</h2>
+                <p>Contenuto della terza sezione.</p>
+            </section>
+            <section class="section-fourth">
+                <h2>Quarta Sezione</h2>
+                <p>Contenuto della quarta sezione.</p>
+            </section>
+        </div>
+        <div class="row">
+            <section class="section-fifth">
+                <h2>Quinta Sezione</h2>
+                <p>Contenuto della quinta sezione.</p>
+            </section>
+            <section class="section-sixth">
+                <h2>Sesta Sezione</h2>
+                <p>Contenuto della sesta sezione.</p>
+            </section>
+            <section class="section-seventh">
+                <h2>Settima Sezione</h2>
+                <p>Contenuto della settima sezione.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark text-white mt-5 p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Informazioni di Contatto</h5>
+                    <p>Email: <a href="mailto:andrea.trapani@mt-solutions.it" title="Invia un'email">andrea.trapani@mt-solutions.it</a></p>
+                    <p>Telefono: <a href="tel:+393513194109" title="Chiama">3513194109</a></p>
+                    <p>Indirizzo: Via De Medici 31, 28043 Bellinzago Novarese, Italia</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Link Utili</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">About</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Seguici</h5>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p>&copy; <span id="current-year"></span> - Tutti i diritti riservati</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pulsante per tornare all'inizio della pagina -->
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
